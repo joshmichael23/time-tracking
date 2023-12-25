@@ -22,8 +22,8 @@ function App() {
             </div>
             <div className='card-content'>
                 <a onClick={() => setActive(active => 'daily')} className={active=='daily'? 'active' : ''}>Daily</a>
-                <a onClick={() => setActive(active => 'weekly')} className={active=='daily'? 'active' : ''}>Weekly</a>
-                <a onClick={() => setActive(active => 'monthly')} className={active=='daily'? 'active' : ''}>Monthly</a>
+                <a onClick={() => setActive(active => 'weekly')} className={active=='weekly'? 'active' : ''}>Weekly</a>
+                <a onClick={() => setActive(active => 'monthly')} className={active=='monthly'? 'active' : ''}>Monthly</a>
             </div>
 
           </div>
