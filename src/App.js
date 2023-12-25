@@ -9,7 +9,7 @@ function App() {
 
   const [active, setActive] = useState('');
   return (
-    <div onLoad={()=>setActive(active => 'daily')} className="App">
+    <div onLoad={()=>setActive(active => 'weekly')} className="App">
 
         
       <div className='wrapper'>
@@ -21,9 +21,9 @@ function App() {
                   <h1><span>Report for</span> Jeremy Robson</h1>
             </div>
             <div className='card-content'>
-                <a onClick={() => setActive(active => 'daily')}>Daily</a>
-                <a onClick={() => setActive(active => 'weekly')}>Weekly</a>
-                <a onClick={() => setActive(active => 'monthly')}>Monthly</a>
+                <a onClick={() => setActive(active => 'daily')} className={active=='daily'? 'active' : ''}>Daily</a>
+                <a onClick={() => setActive(active => 'weekly')} className={active=='daily'? 'active' : ''}>Weekly</a>
+                <a onClick={() => setActive(active => 'monthly')} className={active=='daily'? 'active' : ''}>Monthly</a>
             </div>
 
           </div>
